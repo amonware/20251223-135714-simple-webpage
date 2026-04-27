@@ -9,14 +9,15 @@
 <body>
     <header>
         <nav>
-            <div class="container">
+            <div class="container nav-inner">
                 <div class="logo">
-                    <h1>Simple Site</h1>
+                    <h1><span class="logo-mark">✦</span> Simple Site</h1>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#home">홈</a></li>
                     <li><a href="#about">소개</a></li>
                     <li><a href="#services">서비스</a></li>
+                    <li><a href="#stats">성과</a></li>
                     <li><a href="#contact">연락처</a></li>
                 </ul>
             </div>
@@ -25,24 +26,55 @@
 
     <main>
         <section id="home" class="hero">
+            <div class="hero-bg">
+                <span class="shape shape-1"></span>
+                <span class="shape shape-2"></span>
+                <span class="shape shape-3"></span>
+                <span class="shape shape-4"></span>
+            </div>
             <div class="container">
-                <div class="hero-content">
-                    <h2>환영합니다</h2>
-                    <p>간단하고 깔끔한 웹사이트입니다.</p>
-                    <button class="cta-button">Get Started</button>
+                <div class="hero-content" data-animate="fade-up">
+                    <span class="hero-badge">✨ Welcome to the new era</span>
+                    <h2>당신의 아이디어를 <span class="gradient-text">현실</span>로 만들어드립니다</h2>
+                    <p>간단하고 깔끔하면서도 강력한 웹사이트로 비즈니스의 첫 인상을 사로잡으세요.</p>
+                    <div class="hero-actions">
+                        <button class="cta-button">Get Started</button>
+                        <button class="ghost-button">Learn More</button>
+                    </div>
+                </div>
+                <div class="scroll-hint" aria-hidden="true">
+                    <span></span>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="container">
-                <h2>소개</h2>
+                <div class="section-header" data-animate="fade-up">
+                    <span class="eyebrow">ABOUT</span>
+                    <h2>우리는 <span class="gradient-text">사용자 중심</span>입니다</h2>
+                </div>
                 <div class="about-grid">
-                    <div class="about-text">
-                        <p>저희는 사용자 중심의 서비스를 제공합니다. 간단하면서도 효과적인 솔루션을 통해 여러분의 필요를 충족시켜 드립니다.</p>
+                    <div class="about-text" data-animate="fade-right">
+                        <p>저희는 단순함과 효율성을 동시에 추구합니다. 깔끔한 디자인과 견고한 기술로 사용자의 시간을 존중하고, 비즈니스의 가치를 극대화합니다.</p>
+                        <ul class="checklist">
+                            <li>모던하고 반응형인 디자인</li>
+                            <li>빠른 로딩 속도와 최적화</li>
+                            <li>접근성을 고려한 UI/UX</li>
+                            <li>확장 가능한 아키텍처</li>
+                        </ul>
                     </div>
-                    <div class="about-image">
-                        <img src="https://picsum.photos/400/300" alt="About us">
+                    <div class="about-image" data-animate="fade-left">
+                        <div class="image-frame">
+                            <img src="https://picsum.photos/500/400" alt="About us">
+                            <div class="floating-card">
+                                <span class="floating-icon">⚡</span>
+                                <div>
+                                    <strong>10x</strong>
+                                    <small>Faster Delivery</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,22 +82,58 @@
 
         <section id="services" class="services">
             <div class="container">
-                <h2>서비스</h2>
+                <div class="section-header" data-animate="fade-up">
+                    <span class="eyebrow">SERVICES</span>
+                    <h2>핵심 <span class="gradient-text">서비스</span></h2>
+                    <p class="section-sub">선택과 집중으로 만든 강력한 솔루션을 만나보세요.</p>
+                </div>
                 <div class="services-grid">
-                    <div class="service-card">
-                        <img src="https://picsum.photos/300/200?random=1" alt="Service 1">
-                        <h3>서비스 1</h3>
-                        <p>첫 번째 서비스에 대한 설명입니다.</p>
+                    <div class="service-card" data-animate="fade-up" data-delay="0">
+                        <div class="service-icon">🚀</div>
+                        <h3>Launch Fast</h3>
+                        <p>최소한의 시간으로 최대의 임팩트. 아이디어를 빠르게 시장에 선보이세요.</p>
+                        <a href="#" class="service-link">자세히 보기 →</a>
                     </div>
-                    <div class="service-card">
-                        <img src="https://picsum.photos/300/200?random=2" alt="Service 2">
-                        <h3>서비스 2</h3>
-                        <p>두 번째 서비스에 대한 설명입니다.</p>
+                    <div class="service-card" data-animate="fade-up" data-delay="100">
+                        <div class="service-icon">🎨</div>
+                        <h3>Beautiful Design</h3>
+                        <p>세련된 디자인 시스템으로 모든 화면에서 완벽한 사용자 경험을 제공합니다.</p>
+                        <a href="#" class="service-link">자세히 보기 →</a>
                     </div>
-                    <div class="service-card">
-                        <img src="https://picsum.photos/300/200?random=3" alt="Service 3">
-                        <h3>서비스 3</h3>
-                        <p>세 번째 서비스에 대한 설명입니다.</p>
+                    <div class="service-card" data-animate="fade-up" data-delay="200">
+                        <div class="service-icon">🔒</div>
+                        <h3>Secure & Reliable</h3>
+                        <p>최신 보안 표준과 안정적인 인프라로 신뢰할 수 있는 서비스를 보장합니다.</p>
+                        <a href="#" class="service-link">자세히 보기 →</a>
+                    </div>
+                    <div class="service-card" data-animate="fade-up" data-delay="300">
+                        <div class="service-icon">📈</div>
+                        <h3>Scalable</h3>
+                        <p>비즈니스 성장에 맞춰 무한히 확장 가능한 유연한 아키텍처를 제공합니다.</p>
+                        <a href="#" class="service-link">자세히 보기 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-animate="fade-up">
+                        <div class="stat-number" data-target="1280">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item" data-animate="fade-up" data-delay="100">
+                        <div class="stat-number" data-target="350">0</div>
+                        <div class="stat-label">Projects Done</div>
+                    </div>
+                    <div class="stat-item" data-animate="fade-up" data-delay="200">
+                        <div class="stat-number" data-target="42">0</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                    <div class="stat-item" data-animate="fade-up" data-delay="300">
+                        <div class="stat-number" data-target="99">0</div>
+                        <div class="stat-label">% Satisfaction</div>
                     </div>
                 </div>
             </div>
@@ -73,20 +141,33 @@
 
         <section id="contact" class="contact">
             <div class="container">
-                <h2>연락처</h2>
+                <div class="section-header" data-animate="fade-up">
+                    <span class="eyebrow">CONTACT</span>
+                    <h2>지금 바로 <span class="gradient-text">시작</span>하세요</h2>
+                    <p class="section-sub">궁금한 점이 있으시다면 언제든지 연락 주세요.</p>
+                </div>
                 <div class="contact-content">
-                    <div class="contact-info">
+                    <div class="contact-info" data-animate="fade-right">
                         <h3>문의하기</h3>
-                        <p>이메일: info@example.com</p>
-                        <p>전화: 02-1234-5678</p>
-                        <p>주소: 서울시 강남구 테헤란로 123</p>
+                        <ul class="contact-list">
+                            <li><span class="contact-icon">📧</span> info@example.com</li>
+                            <li><span class="contact-icon">📞</span> 02-1234-5678</li>
+                            <li><span class="contact-icon">📍</span> 서울시 강남구 테헤란로 123</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                            <a href="#" class="social-link" aria-label="GitHub">⌨</a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        </div>
                     </div>
-                    <div class="contact-form">
-                        <form>
-                            <input type="text" placeholder="이름" required>
-                            <input type="email" placeholder="이메일" required>
-                            <textarea placeholder="메시지" rows="5" required></textarea>
-                            <button type="submit">보내기</button>
+                    <div class="contact-form" data-animate="fade-left">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <input type="text" placeholder="이름" required>
+                                <input type="email" placeholder="이메일" required>
+                            </div>
+                            <textarea placeholder="메시지를 입력하세요" rows="5" required></textarea>
+                            <button type="submit" class="cta-button full">보내기 →</button>
                         </form>
                     </div>
                 </div>
@@ -95,8 +176,12 @@
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Simple Site. All rights reserved.</p>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <h3><span class="logo-mark">✦</span> Simple Site</h3>
+                <p>Build beautiful experiences, simply.</p>
+            </div>
+            <p class="copyright">&copy; 2026 Simple Site. All rights reserved.</p>
         </div>
     </footer>
 
